@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELOUP — FACEIT CS2 Assistant</title>
+  <meta name="description" content="ELOUP — персональный помощник для FACEIT CS2. Статистика, Elo, прогресс и анализ матчей.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0d10;
+      color: #f4f5f6;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 1100px; margin: auto; padding: 0 24px; }
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid #242830;
+    }
+    nav { display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-size: 28px; font-weight: 900; letter-spacing: 2px; }
+    .logo span { color:#ff5a1f; }
+    .hero { padding: 100px 0 80px; text-align:center; }
+    .badge {
+      display:inline-block; padding:8px 14px; border:1px solid #333941;
+      border-radius:999px; color:#ff6a32; margin-bottom:24px; font-size:14px;
+    }
+    h1 { font-size: clamp(48px, 8vw, 88px); line-height: .95; margin-bottom:25px; }
+    h1 span { color:#ff5a1f; }
+    .hero p { max-width:650px; margin:0 auto 35px; color:#aeb4bd; font-size:20px; }
+    .btn {
+      display:inline-block; padding:14px 24px; border-radius:8px;
+      background:#ff5a1f; color:#fff; text-decoration:none; font-weight:700;
+    }
+    section { padding:70px 0; }
+    .title { text-align:center; font-size:38px; margin-bottom:45px; }
+    .grid {
+      display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+    }
+    .card {
+      background:#12151a; border:1px solid #252a31; border-radius:14px;
+      padding:28px;
+    }
+    .icon { font-size:30px; margin-bottom:15px; }
+    .card h3 { margin-bottom:8px; font-size:21px; }
+    .card p { color:#9fa6b0; }
+    .about {
+      background:#12151a; border-top:1px solid #242830; border-bottom:1px solid #242830;
+    }
+    .about-inner { max-width:760px; margin:auto; text-align:center; }
+    .about p { color:#aeb4bd; font-size:18px; }
+    footer {
+      padding:30px 0; text-align:center; color:#707780; font-size:14px;
+    }
+    @media(max-width:750px) {
+      .grid { grid-template-columns:1fr; }
+      .hero { padding-top:65px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="logo">ELO<span>UP</span></div>
+        <div style="color:#858c96">FACEIT CS2 Assistant</div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="badge">🎮 FACEIT CS2</div>
+        <h1>Играй умнее.<br><span>Поднимай Elo.</span></h1>
+        <p>
+          ELOUP — персональный помощник для игроков FACEIT CS2.
+          Отслеживай статистику, прогресс и результаты матчей в одном месте.
+        </p>
+        <a class="btn" href="#features">Узнать больше</a>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <h2 class="title">Возможности ELOUP</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="icon">📊</div>
+            <h3>Статистика</h3>
+            <p>Следи за ключевыми показателями и результатами своих матчей FACEIT.</p>
+          </div>
+          <div class="card">
+            <div class="icon">📈</div>
+            <h3>Elo и прогресс</h3>
+            <p>Отслеживай изменение Elo и свой путь к следующему уровню.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🧠</div>
+            <h3>AI Coach</h3>
+            <p>Находи слабые стороны и получай идеи для улучшения своей игры.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🎯</div>
+            <h3>Цели</h3>
+            <p>Ставь игровые цели и контролируй прогресс на пути к FACEIT Level 10.</p>
+          </div>
+          <div class="card">
+            <div class="icon">👥</div>
+            <h3>Тиммейты</h3>
+            <p>В будущем — поиск игроков для совместной игры и формирования команды.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🏆</div>
+            <h3>Leaderboard</h3>
+            <p>Сравнивай свои результаты с другими игроками и соревнуйся за место в рейтинге.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap">
+        <div class="about-inner">
+          <h2 class="title">О проекте</h2>
+          <p>
+            ELOUP — независимый проект для сообщества Counter-Strike 2,
+            созданный для удобного анализа прогресса игроков на FACEIT.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 ELOUP. Independent project. Not affiliated with FACEIT.
+  </footer>
+</body>
+</html>
